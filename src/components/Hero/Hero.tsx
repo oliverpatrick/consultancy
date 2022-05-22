@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -43,9 +44,11 @@ function Hero({
         <p className="mb-8 text-2xl leading-normal">{secondaryText}</p>
         <div className="flex justify-center">
           {button ? (
-            <IconButton className="med:w-full mx-auto my-6 bg-gradient-to-r from-pink-500 to-violet-500 py-4 px-8 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 hover:underline focus:shadow-lg focus:outline-none lg:mx-0">
-              {buttonText}
-            </IconButton>
+            <Link href="/contact">
+              <IconButton className="med:w-full mx-auto my-6 bg-[#9D1CCB] py-4 px-8 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 hover:underline focus:shadow-lg focus:outline-none lg:mx-0">
+                {buttonText}
+              </IconButton>
+            </Link>
           ) : null}
         </div>
       </section>

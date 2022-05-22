@@ -9,7 +9,7 @@ interface ContactProps {
 function Contact({ placeholder }: ContactProps) {
   console.log(placeholder);
   return (
-    <div className="bg-gradient-to-b from-blue-800 to-blue-600">
+    <div className="bg-gradient-to-b from-blue-800 to-blue-600 pt-20">
       <div className="mx-auto mb-12 max-w-5xl px-6 sm:px-6 lg:px-8">
         <div className="w-full bg-white p-8 shadow sm:p-12">
           <h1>CONTACT US</h1>

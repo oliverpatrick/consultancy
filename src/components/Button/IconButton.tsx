@@ -8,7 +8,7 @@ export function IconButton({ children, text, className }: IconButtonProps) {
   return (
     <button type="button" className={className}>
       {children}
-      <span className="text-slate-50">{text}</span>
+      <span className="text-[#9D1CCB]">{text}</span>
     </button>
   );
 }
